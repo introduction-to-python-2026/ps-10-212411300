@@ -3,9 +3,9 @@ import numpy as np
 from scipy.signal import convolve2d
 
 def load_image(path):
-    img = Image.open(path)
-    img_array = np.array(img)
-    return img_array 
+    image = Image.open(file_path)
+    np_image = np.asarray(image)
+    return np_image 
     
 def edge_detection(image_array):
     gray_image = np.mean(image_array, axis=2)
