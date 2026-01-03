@@ -7,7 +7,7 @@ def load_image(path):
     img_array = np.array(img)
     return img_array 
     
-def edge_detection(image):
+def edge_detection(image_array):
     gray_image = np.mean(image_array, axis=2)
     
     kernelY = np.array([[ 1,  0, -1],
